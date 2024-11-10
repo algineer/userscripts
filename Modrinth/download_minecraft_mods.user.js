@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Download Minecraft Mods
 // @namespace    https://github.com/algineer/
-// @version      1.1.0
+// @version      1.1.1
 // @description  Download Minecraft Mods From Modrinth From User Collections
 // @author       Algineer
 // @match        https://modrinth.com/*
@@ -150,7 +150,7 @@
 				${not_installed.length > 0 ? not_installed.map(mod => `  • ${mod.title}`).join('\n') : 'None'}
 				-------------------------------------------
 				Pending Mods:
-				${pending_projects.length > 0 ? pending_projects.map(mod => `  • ${mod}`).join('\n') : 'None'}
+				${pending_projects.length > 0 ? pending_projects.map(mod => `  • ${mod.title}`).join('\n') : 'None'}
 				`.replace(/\t/g, '')
 			)
 		}
