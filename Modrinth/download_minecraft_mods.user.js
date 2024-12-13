@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Minecraft Mods
 // @namespace    https://github.com/algineer/
-// @version      2.0.0
+// @version      2.1.0
 // @description  Download Minecraft Mods From Modrinth From User Collections
 // @author       Algineer
 // @match        https://modrinth.com/*
