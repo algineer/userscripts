@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Minecraft Mods
 // @namespace    https://github.com/algineer/
-// @version      2.1.0
+// @version      2.2.0
 // @description  Download Minecraft Mods From Modrinth From User Collections
 // @author       Algineer
 // @match        https://modrinth.com/*
@@ -13,7 +13,7 @@
 
 ;(function () {
 	const config = {
-		gameVersion: '1.21.4',
+		gameVersion: '1.21.5',
 		userId: 'OFlh8kiv', // User ID for Modrinth API calls
 		collectionName: 'Client', // Collection name to filter projects
 	}
