@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Lilypad Backup (Manual Trigger)
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.1.0
 // @description  Starts when manually triggered from the right-click menu; repeats every 30 minutes
 // @match        https://panel.lilypad.gg/*/*/files
 // @downloadURL  https://github.com/algineer/userscripts/raw/main/LilyPad/auto_backup.user.js
@@ -43,10 +43,18 @@
 			)
 			compressButton.click()
 
+			// Wait for compresion to complete and worldCheckbox is false
+			await waitForElement(() => {
+				const cb = worldCheckbox
+				return cb && !cb.checked ? cb : null
+			})
+
 			const archiveCheckbox = await waitForElement(() =>
 				document.querySelector('input[type="checkbox"][value*="archive"]')
 			)
 			archiveCheckbox.click()
+
+			//before move need to make sure worldCheckbox.checked is false and if not wait for it to be
 
 			let moveButton = await waitForElement(
 				() =>
@@ -79,5 +87,5 @@
 
 	// Run immediately and on interval
 	runBackupSequence()
-	setInterval(runBackupSequence, 30 * 60 * 1000) // Every 30 minutes
+	setInterval(runBackupSequence, 20 * 60 * 1000) // Every 30 minutes
 })()
