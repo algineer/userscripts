@@ -11,8 +11,6 @@
 // ==/UserScript==
 
 ;(function () {
-	'use strict'
-
 	alert('🔁 Backup script started. Will repeat every 30 minutes.')
 
 	function waitForElement(getterFn, timeout = 5000, interval = 100) {
@@ -41,7 +39,7 @@
 				() =>
 					[...document.querySelectorAll('button')].filter(el =>
 						el.textContent.includes('Compress')
-					)[1]
+					)[0]
 			)
 			compressButton.click()
 
