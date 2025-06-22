@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Lilypad Backup (Manual Trigger)
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.0.0
 // @description  Starts when manually triggered from the right-click menu; repeats every 30 minutes
 // @match        https://panel.lilypad.gg/*/*/files
 // @downloadURL  https://github.com/algineer/userscripts/raw/main/LilyPad/auto_backup.user.js
