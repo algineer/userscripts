@@ -13,7 +13,7 @@
 
 ;(function () {
 	const config = {
-		gameVersion: '1.21.5',
+		gameVersion: '1.21.6',
 		userId: 'OFlh8kiv', // User ID for Modrinth API calls
 		collectionName: 'Client', // Collection name to filter projects
 	}
