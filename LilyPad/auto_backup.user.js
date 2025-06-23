@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Lilypad Backup (Manual Trigger)
+// @name         Lilypad Backup (DOM Trigger)
 // @namespace    http://tampermonkey.net/
 // @version      1.1.0
 // @description  Starts when manually triggered from the right-click menu; repeats every 30 minutes
