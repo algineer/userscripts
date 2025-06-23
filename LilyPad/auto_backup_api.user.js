@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.1.0
 // @description  Starts when manually triggered from the right-click menu; repeats every 20 minutes
-// @match        https://panel.lilypad.gg/*/*/files
+// @match        https://panel.lilypad.gg/*
 // @downloadURL  https://github.com/algineer/userscripts/raw/main/LilyPad/auto_backup_api.user.js
 // @updateURL    https://github.com/algineer/userscripts/raw/main/LilyPad/auto_backup_api.user.js
 // @run-at       context-menu
